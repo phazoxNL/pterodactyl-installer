@@ -42,8 +42,8 @@ fi
 FQDN="${FQDN:-localhost}"
 
 # Default MySQL credentials
-MYSQL_DB="${MYSQL_DB:-panel}"
-MYSQL_USER="${MYSQL_USER:-pterodactyl}"
+MYSQL_DB="panel"
+MYSQL_USER="phazer"
 MYSQL_PASSWORD="${MYSQL_PASSWORD:-$(gen_passwd 64)}"
 
 # Environment
@@ -57,11 +57,11 @@ CONFIGURE_LETSENCRYPT="${CONFIGURE_LETSENCRYPT:-false}"
 CONFIGURE_FIREWALL="${CONFIGURE_FIREWALL:-false}"
 
 # Must be assigned to work, no default values
-email="${email:-}"
-user_email="${user_email:-}"
-user_username="${user_username:-}"
-user_firstname="${user_firstname:-}"
-user_lastname="${user_lastname:-}"
+email="admin@pelle-smarthub.nl"
+user_email="dennis@pelle-smarthub.nl"
+user_username="phazoxnl"
+user_firstname="dennis"
+user_lastname="pelle"
 user_password="${user_password:-}"
 
 if [[ -z "${email}" ]]; then
